@@ -28,3 +28,15 @@ export function addToCart(productId){
         )
     }
 }
+
+export function removeProduct(productId){
+    let newCart = [];
+
+    cart.forEach((item)=>{
+        if(item.productId !== productId){
+            newCart.push(item)
+        }
+    })
+
+    cart = newCart;
+}
