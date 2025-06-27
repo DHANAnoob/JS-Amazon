@@ -11,8 +11,6 @@ cart.forEach((product)=>{
           matchingProduct = item  
         }
     })
-
-    console.log(matchingProduct, 'matchingProduct');
     
 
     productDets +=
